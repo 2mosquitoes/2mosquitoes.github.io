@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "2mosquitoes",
-    "repositoryName": "2mosquitoes.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"2mosquitoes","repositoryName":"2mosquitoes.github.io","branch":"master","cname":"2mosquito.es"},"site":{"title":"2 Mosquitoes in Paradise","url":"http://2mosquito.es"},"socialnetwork":{},"theme":{"name":"ichi","url":"//2mosquitoes.github.io/themes/ichi"}}
