@@ -10,67 +10,94 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="//2mosquito.es/themes/Casper/favicon.ico">
+    <link rel="shortcut icon" href="//2mosquito.es/themes/Roon/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="//2mosquito.es/themes/Casper/assets/css/screen.css?v=1.0.0" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
+    <link rel="stylesheet" type="text/css" href="//2mosquito.es/themes/Roon/assets/css/screen.css?v=1.0.0" />
 
     <link rel="canonical" href="http://2mosquito.es" />
     <meta name="generator" content="Ghost ?" />
     <link rel="alternate" type="application/rss+xml" title="2 Mosquitoes in Paradise" href="http://2mosquito.es/rss" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 </head>
-<body class="home-template">
+<body class="home-template user ">
 
     
-<header class="main-header " style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/a/a4/Faro_de_Rincon.jpg)">
-    <nav class="main-nav overlay clearfix">
-        
-        <!-- <a class="subscribe-button icon-feed" href="http://2mosquito.es/rss/">Subscribe</a> -->
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">2 Mosquitoes in Paradise</h1>
-            <h2 class="page-description">The happenings of two city dwellers, relocating to the caribbean to discover the island life</h2>
-        </div>
+<header role="banner">
+    <div class="wrap">
+        <h1><a href="http://2mosquito.es">2 Mosquitoes in Paradise</a></h1>
+        <hr>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
-<main id="content" class="content" role="main">
 
-    <div class="extra-pagination inner">
-        <nav class="pagination" role="navigation">
-        <span class="page-number">Page 1 of 1</span>
-    </nav>
+<article class="post ">
+
+
+    <div class="meta">
+        <time datetime="2015-05-30"><a href="http://2mosquito.es/2015/05/30/Trading-Pigeons-for-Pelicans.html">May 30, 2015</a></time>
     </div>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="http://2mosquito.es/2015/05/30/Trading-Pigeons-for-Pelicans.html">Trading Pigeons for Pelicans</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>Have you ever been on vacation, toes in the sand, drink with an umbrella, staring at the ocean and think, "how the hell am I going <a class="read-more" href="http://2mosquito.es/2015/05/30/Trading-Pigeons-for-Pelicans.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-            
-            <time class="post-date" datetime="2015-05-30">30 May 2015</time>
-        </footer>
-    </article>
-    
-    <nav class="pagination" role="navigation">
-        <span class="page-number">Page 1 of 1</span>
-    </nav>
 
-</main>
+    <header>
+        <h1><a href="http://2mosquito.es/2015/05/30/Trading-Pigeons-for-Pelicans.html">Trading Pigeons for Pelicans</a></h1>
+    </header>
+
+    <div class="text">
+        <p>Have you ever been on vacation, toes in the sand, drink with an umbrella, staring at the ocean and think, "how the hell am I going to go back to work next week?" For many of us its a chicken and egg problem, we want</p>
+        <a href="http://2mosquito.es/2015/05/30/Trading-Pigeons-for-Pelicans.html" class="readmore">Continue Reading</a>
+    </div>
+</article>
+
+<nav class="pagination" role="navigation">
+    <span class="page-number">Page 1 of 1</span>
+</nav>
+
+<footer role="contentinfo">
+    <div class="inner">
+        <div class="vcard">
+            <!-- <a href="http://2mosquito.es/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                <span aria-hidden="true" data-icon=")"></span>
+                <strong>Feed</strong>
+            </a> -->
 
 
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="http://2mosquito.es">2 Mosquitoes in Paradise</a> &copy; 2015</section>
-        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
-    </footer>
+            <div class="details">
+                <h4><a href="http://2mosquito.es" class="url n">2 Mosquitoes in Paradise</a></h4>
+                <a href="http://2mosquito.es" class="js-remove-domain-schema">http://2mosquito.es</a><br>
+                <span>Published with <a href="http://hubpress.io">HubPress</a></span>
+            </div>
+        </div>
+        <div id="user_bio">
+            <div class="inner">
+                The happenings of two city dwellers, relocating to the caribbean to discover the island life
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script>
+
+
+        function no_schema_links () {
+            var links = document.querySelectorAll('.js-remove-domain-schema');
+            if (links) {
+                for (i = 0; i < links.length; ++i) {
+                    var link = links[i],
+                        text = link.innerHTML,
+                        no_schema = text.replace(/.*?:\/\//g, "");
+                    link.innerHTML = no_schema;
+                }
+            }
+        }
+
+        window.onload = function () {
+            no_schema_links();
+
+        }
+    </script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
       <script type="text/javascript">
@@ -85,8 +112,8 @@
         hljs.initHighlightingOnLoad();      
       </script>
 
-    <script type="text/javascript" src="//2mosquito.es/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
-    <script type="text/javascript" src="//2mosquito.es/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+
 
 </body>
 </html>
